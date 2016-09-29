@@ -6,7 +6,7 @@ COPY initial.sql /initial.sql
 
 RUN mysql_install_db
 
-USER mysql
+USER root 
 
 CMD ["mysqld_safe", "--init-file=/initial.sql --user=mysql"]
 
