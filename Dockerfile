@@ -8,6 +8,6 @@ RUN mysql_install_db
 
 USER mysql
 
-CMD ["mysqld", "--init-file=/initial.sql"]
+CMD ["mysql", "--init-file=/initial.sql"]
 
 EXPOSE 3306
