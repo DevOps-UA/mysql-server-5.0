@@ -8,6 +8,6 @@ RUN mysql_install_db
 
 USER root 
 
-CMD ["mysqld_safe", "--init-file=/initial.sql --user=mysql"]
+CMD ["mysqld_safe", "--init-file=/initial.sql", "--user=mysql"]
 
 EXPOSE 3306
