@@ -11,4 +11,4 @@ groupmod -g $TARGET_GID mysql || true
 echo
 #echo '* Starting MySQL'
 chown -R mysql:root /var/run/mysqld/
-#/entrypoint.sh mysqld --user=mysql --console
+mysqld_safe --init-file=/initial.sql --user=mysql

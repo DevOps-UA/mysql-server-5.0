@@ -12,6 +12,4 @@ USER root
 RUN chmod 755 /localdb-run.sh
 ENTRYPOINT ["/localdb-run.sh"] 
 
-CMD ["mysqld_safe", "--init-file=/initial.sql", "--user=mysql"]
-
 EXPOSE 3306
